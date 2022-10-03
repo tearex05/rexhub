@@ -7,12 +7,18 @@ import Teagame from './assets/tearexgame.jpg'
 import Tour from './assets/tour-main-page.PNG'
 import {FaInstagram, FaTelegram, } from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
+import Resume from './assets/resume.jpg'
 
 
 
 
 function App() {
-   const myRef = useRef(null)
+
+   const ref1 = useRef(null)
+   const ref2 = useRef(null)
+   const ref3 = useRef(null)
+   const ref4 = useRef(null)
+   const ref5 = useRef(null)
 
   useEffect(() => {
   window.scrollTo(0, 0);
@@ -23,14 +29,23 @@ function App() {
     <div className="bg"></div>
     <div className='container'>
       <div className="bodies">
-        <div className="title-body">
+        <div ref={ref1} className="title-body">
+        <div class="navbar">
+        <p class="rexhub" onClick={() => ref1.current.scrollIntoView()}>RexHub</p>
+        <div className="nav">
+          <p className="skills-nav" onClick={() => ref2.current.scrollIntoView()}>Skills</p>
+          <p className="works-nav" onClick={() => ref3.current.scrollIntoView()}>Works</p>
+          <p className="about-nav" onClick={() => ref4.current.scrollIntoView()}>About</p>
+          <p className="resume-nav" onClick={() => ref5.current.scrollIntoView()}>Resume</p>
+        </div>
+        </div>
           <h1 className="title">Welcome To <span className="rex">RexHub</span>
           </h1>
-          <button onClick={() => myRef.current.scrollIntoView()} className="explore">
+          <button onClick={() => ref2.current.scrollIntoView()} className="explore">
           Explore
           </button>
         </div>
-        <div ref={myRef} class="skills-body">
+        <div ref={ref2} class="skills-body">
           <h1 className="skills-title">
             My Skills         
           </h1>
@@ -54,7 +69,7 @@ function App() {
             Git & Github
           </h1>
         </div>
-        <div className="works-body">
+        <div ref={ref3} className="works-body">
           <h1 class="works-title">My Recent Works</h1>
           <div className="works">
             <Work img={Benz} link='https://the-reza.github.io/benz/' />
@@ -66,7 +81,7 @@ function App() {
             More Coming Soon...
           </h1> 
         </div>
-        <div className="contact-body">
+        <div ref={ref4} className="contact-body">
          <h1 className="contact-title">
            Want To Have A Great Website?<br /><span className="call">Better Call Me ;)</span>
          </h1>
@@ -96,7 +111,15 @@ function App() {
             </h1>
           </div>
          </div>
+        </div>
+        <div ref={ref5} className="resume">
+           <h1 class="resume-title">Wanna See My Resume?<br/><span className="all">Its All Here!</span></h1>
+           <img src={Resume} alt="My Pretty Resume" class="resume-img" />
+           <a href="https://drive.google.com/uc?id=1imXvpQgGBMCzxgNAE9Jser88S7rJtt7W&export=download" className="explore download">Download</a>
         </div>  
+        <div className="end">
+           <h1 className="end-title">To Be Continued...</h1>
+        </div>
       </div>
     </div>
     <div class="scroll-downs">

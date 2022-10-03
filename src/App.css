@@ -1,6 +1,23 @@
 /*color: #09BC8A;*/
 
 @media (max-width: 480px){
+
+.end-title{
+  font-size: 2.4rem;
+}
+
+.resume{
+  font-size: 0.8rem;
+}
+
+.all{
+  font-size: 3rem;
+}
+
+.navbar{
+  display: none;
+}
+
   .explore{
     font-size: 1.7rem;
   }
@@ -58,6 +75,22 @@
 
 @media (min-width: 481px) and (
   max-width: 768px){
+
+.end-title{
+  font-size: 3.5rem;
+}
+
+.resume{
+  font-size: 1.1rem;
+}
+
+.all{
+  font-size: 4rem;
+}
+
+  .navbar{
+  display: none;
+}
   .explore{
     font-size: 2rem;
   }
@@ -115,6 +148,22 @@
 }
 
 @media (min-width: 769px) and (max-width: 1279px){
+
+.end-title{
+  font-size: 5rem;
+}
+
+.resume{
+  font-size: 1.8rem;
+}
+
+.all{
+  font-size: 6rem;
+}
+
+  .navbar{
+  display: flex;
+}
 .explore{
     font-size: 2.5rem;
   }
@@ -172,6 +221,21 @@
 
 @media (min-width: 1280px){
 
+.end-title{
+  font-size: 7rem;
+}
+
+.resume{
+  font-size: 2.5rem;
+}
+
+.all{
+  font-size: 8rem;
+}
+
+.navbar{
+  display: flex;
+}
   .mousey {
   width: 5px;
   padding: 20px 20px;
@@ -232,7 +296,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: 0.6em;
+  width: 0.8em;
 }
 
 body::-webkit-scrollbar-track {
@@ -250,11 +314,65 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
+  transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 html, body{
   scroll-behavior: smooth;
   transition: all 0.2s ease;
+}
+
+.navbar{
+  width: 100vw;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  font-size: 1.3rem;
+}
+
+.rexhub{
+  background: -webkit-linear-gradient(45deg, rgba(9,188,138,1) 0%, rgba(0,255,188,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.skills-nav{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.works-nav{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.about-nav{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.resume-nav{
+  font-weight: bolder;
+  background-color: whitesmoke;
+  color: #111111;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 
 .bg{
@@ -466,10 +584,7 @@ margin-bottom: 100px;
   justify-content: center;
   margin: 0 15px;
   font-style: italic;
-}
-
-.icon-info{
-  border-bottom: 2px solid whitesmoke;
+  overflow: hidden;
 }
 
 .info{
@@ -498,6 +613,47 @@ fill: #2FA3D9;
 
 .email-icon{
   fill: #5C01CA;
+}
+
+.resume{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  padding: 20px 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.end{
+  width: 100vw;
+  min-height: 20vh;
+  color: whitesmoke;
+  border-top: 2px dashed #09BC8A;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.end-title{
+  font-style: italic;
+}
+
+.all{
+  font-style: italic;
+  color: tomato;
+}
+
+.resume-img{
+  width: 250px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.resume-img:hover{
+  transform: rotateZ(-2deg) scale(1.1);
 }
 
 .scroll-downs {
