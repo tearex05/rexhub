@@ -19,18 +19,18 @@
 }
 
   .explore{
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .title{
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .rex{
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .skills-title{
-  font-size: 3rem;
+  font-size: 4.7rem;
 }
 
 .skill{
@@ -38,7 +38,7 @@
 }
 
 .works-title{
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 
 .coming{
@@ -50,8 +50,7 @@
 }
 
 .work{
-  width: 250px;
-  height: 250px;
+  width: 22em;
 }
 
 .contact-title{
@@ -63,12 +62,12 @@
 }
 
 .icon{
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
 }
 
 .icon-info{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 }
@@ -112,7 +111,7 @@
 }
 
 .works-title{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .coming{
@@ -124,8 +123,7 @@
 }
 
 .work{
-  width: 350px;
-  height: 350px;
+  width: 30em;
 }
 
 .contact-title{
@@ -137,12 +135,12 @@
 }
 
 .icon{
-  height: 4em;
-  width: 4em;
+  height: 5em;
+  width: 5em;
 }
 
 .icon-info{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 }
@@ -184,7 +182,7 @@
 }
 
 .works-title{
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .coming{
@@ -196,25 +194,24 @@
 }
 
 .work{
-  width: 350px;
-  height: 350px;
+  width: 23em;
 }
 
 .contact-title{
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .call{
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .icon{
-  height: 4em;
-  width: 4em;
+  height: 7em;
+  width: 7em;
 }
 
 .icon-info{
-  font-size: 3rem;
+  font-size: 6rem;
 }
 
 }
@@ -272,8 +269,7 @@
 }
 
 .work{
-  width: 300px;
-  height: 300px;
+  width: 20em;
 }
 
 .contact-title{
@@ -536,11 +532,6 @@ html, body{
 }
 
 .work{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /*width: 350px;
-  height: 200px;*/
   overflow: hidden;
 }
 
@@ -585,11 +576,12 @@ margin-bottom: 100px;
   margin: 0 15px;
   font-style: italic;
   overflow: hidden;
+  height: 100%;
 }
 
 .info{
   width: 100vw;
-  height: 35vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
