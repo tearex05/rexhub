@@ -50,7 +50,7 @@
 }
 
 .work{
-  width: 22em;
+  width: 18em;
 }
 
 .contact-title{
@@ -58,7 +58,7 @@
 }
 
 .call{
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 
 .icon{
@@ -124,6 +124,7 @@
 
 .work{
   width: 30em;
+  margin: 0 5px;
 }
 
 .contact-title{
@@ -194,7 +195,7 @@
 }
 
 .work{
-  width: 23em;
+  width: 43vw;
 }
 
 .contact-title{
@@ -529,6 +530,7 @@ html, body{
   width: 100vw;
   grid-gap: 30px;
   overflow: hidden;
+  padding: 0 30px;
 }
 
 .work{
@@ -536,7 +538,7 @@ html, body{
 }
 
 .work-link:hover{
-  transform: scale(1.2);
+  transform: scale(1.1) rotateZ(-2deg);
 }
 
 .work-link{

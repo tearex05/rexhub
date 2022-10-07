@@ -1,18 +1,13 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useEffect, useRef} from 'react'
 import './App.css'
 import Work from './Work';
-import Benz from './assets/benz.png'
-import Ham from './assets/hamburger.png'
-import Teagame from './assets/tearexgame.jpg'
-import Tour from './assets/tour-main-page.PNG'
+import Benz from './assets/work1.jpg'
+import Ham from './assets/work2.jpg'
+import Teagame from './assets/work3.jpg'
+import Tour from './assets/work4.jpg'
 import {FaInstagram, FaTelegram, } from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
 import Resume from './assets/resume.jpg'
-
-/*
-
-
-*/
 
 
 function App() {
