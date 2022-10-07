@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/rexhub/static/css/main.558b7f30.css",
-    "main.js": "/rexhub/static/js/main.865b7c66.js",
-    "static/media/tour-main-page.PNG": "/rexhub/static/media/tour-main-page.b1a2afede988e0819c84.PNG",
+    "main.css": "/rexhub/static/css/main.28c8b25e.css",
+    "main.js": "/rexhub/static/js/main.e11644d8.js",
+    "static/media/tour-main-page.PNG": "/rexhub/static/media/tour-main-page.3f0225714f386431502d.PNG",
+    "static/media/benz.png": "/rexhub/static/media/benz.9455a31efaf69a04daf4.png",
+    "static/media/hamburger.png": "/rexhub/static/media/hamburger.3a02b94cd44d825ebb94.png",
     "static/media/rexbg.png": "/rexhub/static/media/rexbg.f74a893fae253a340578.png",
-    "static/media/hamburger.png": "/rexhub/static/media/hamburger.cfec87dbd53b0e2a3d65.png",
-    "static/media/resume.jpg": "/rexhub/static/media/resume.dd06cbc1f25185f89c80.jpg",
-    "static/media/tearexgame.jpg": "/rexhub/static/media/tearexgame.dd718f7f02c2ddd6b132.jpg",
-    "static/media/benz.png": "/rexhub/static/media/benz.d3d5a1c4a6d65a46711f.png",
+    "static/media/resume.jpg": "/rexhub/static/media/resume.559ef980a8ab897bb523.jpg",
+    "static/media/tearexgame.jpg": "/rexhub/static/media/tearexgame.d7293c7207f29c3765e7.jpg",
     "index.html": "/rexhub/index.html",
-    "main.558b7f30.css.map": "/rexhub/static/css/main.558b7f30.css.map",
-    "main.865b7c66.js.map": "/rexhub/static/js/main.865b7c66.js.map"
+    "main.28c8b25e.css.map": "/rexhub/static/css/main.28c8b25e.css.map",
+    "main.e11644d8.js.map": "/rexhub/static/js/main.e11644d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.558b7f30.css",
-    "static/js/main.865b7c66.js"
+    "static/css/main.28c8b25e.css",
+    "static/js/main.e11644d8.js"
   ]
 }
