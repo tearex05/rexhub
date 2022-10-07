@@ -9,7 +9,10 @@ import {FaInstagram, FaTelegram, } from 'react-icons/fa'
 import {MdEmail} from 'react-icons/md'
 import Resume from './assets/resume.jpg'
 
+/*
 
+
+*/
 
 
 function App() {
@@ -115,7 +118,7 @@ function App() {
         <div ref={ref5} className="resume">
            <h1 class="resume-title">Wanna See My Resume?<br/><span className="all">Its All Here!</span></h1>
            <img src={Resume} alt="My Pretty Resume" class="resume-img" />
-           <a href="https://drive.google.com/uc?id=1wZgtFiciEbrDcqXDq-6UGxjN2Zn9HGzb&export=download" className="explore download">Download</a>
+           <a href="https://drive.google.com/uc?id=11bHvLCbSVhbIWT-_QxcH9VSKML4KuecE&export=download" className="explore download">Download</a>
         </div>  
         <div className="end">
            <h1 className="end-title">To Be Continued...</h1>
