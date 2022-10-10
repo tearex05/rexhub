@@ -5,9 +5,8 @@ import Benz from './assets/work1.jpg'
 import Ham from './assets/work2.jpg'
 import Teagame from './assets/work3.jpg'
 import Tour from './assets/work4.jpg'
-import {FaInstagram, FaTelegram, } from 'react-icons/fa'
+import {FaInstagram, FaTelegram, FaYahoo} from 'react-icons/fa'
 import {BsTwitter} from 'react-icons/bs'
-import {MdEmail} from 'react-icons/md'
 import Resume from './assets/resume.jpg'
 
 
@@ -103,7 +102,7 @@ function App() {
           </div>
           <div className="icon-body">
             <span>
-            <MdEmail className='icon email-icon' />
+            <FaYahoo className='icon email-icon' />
             </span>
             <h1 class="icon-info">
             tearex05
