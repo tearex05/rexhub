@@ -6,6 +6,7 @@ import Ham from './assets/work2.jpg'
 import Teagame from './assets/work3.jpg'
 import Tour from './assets/work4.jpg'
 import {FaInstagram, FaTelegram, } from 'react-icons/fa'
+import {BsTwitter} from 'react-icons/bs'
 import {MdEmail} from 'react-icons/md'
 import Resume from './assets/resume.jpg'
 
@@ -103,6 +104,14 @@ function App() {
           <div className="icon-body">
             <span>
             <MdEmail className='icon email-icon' />
+            </span>
+            <h1 class="icon-info">
+            tearex05
+            </h1>
+          </div>
+          <div className="icon-body">
+            <span>
+            <BsTwitter className='icon twitter-icon' />
             </span>
             <h1 class="icon-info">
             tearex05

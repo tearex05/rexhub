@@ -553,7 +553,7 @@ color: whitesmoke;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: start;
+justify-content: flex-start;
 margin-bottom: 100px;
 }
 
@@ -607,6 +607,10 @@ fill: #2FA3D9;
 
 .email-icon{
   fill: #5C01CA;
+}
+
+.twitter-icon{
+fill: #1C93E4;
 }
 
 .resume{
