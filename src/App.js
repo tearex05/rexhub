@@ -1,4 +1,6 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css'
 import Work from './Work';
 import Benz from './assets/work1.jpg'
@@ -8,9 +10,28 @@ import Tour from './assets/work4.jpg'
 import {FaInstagram, FaTelegram, FaYahoo} from 'react-icons/fa'
 import {BsTwitter} from 'react-icons/bs'
 import Resume from './assets/resume.jpg'
+import {BiMenu} from 'react-icons/bi'
+import Js from './assets/icons/js.png'
+import Reactt from './assets/icons/react.png'
+import Redux from './assets/icons/redux.png'
+import Html from './assets/icons/html.png'
+import Css from './assets/icons/css.png'
+import Bootstrap from './assets/icons/bootstrap.png'
+import Tailwind from './assets/icons/tailwind.png'
+import Python from './assets/icons/python.png'
+import Django from './assets/icons/django.png'
+import Mysql from './assets/icons/mysql.png'
+import Git from './assets/icons/git.png'
+import Github from './assets/icons/github.png'
+
 
 
 function App() {
+
+const [style, setStyle] = useState({
+  move:'-100vw',
+  rotate:'0'
+})
 
    const ref1 = useRef(null)
    const ref2 = useRef(null)
@@ -20,22 +41,54 @@ function App() {
 
   useEffect(() => {
   window.scrollTo(0, 0);
+  AOS.init();
 }, [])
 
   return (
     <>
     <div className="bg"></div>
+
     <div className='container'>
       <div className="bodies">
+
         <div ref={ref1} className="title-body">
-        <div class="navbar">
-        <p class="rexhub" onClick={() => ref1.current.scrollIntoView()}>RexHub</p>
-        <div className="nav">
-          <p className="skills-nav" onClick={() => ref2.current.scrollIntoView()}>Skills</p>
-          <p className="works-nav" onClick={() => ref3.current.scrollIntoView()}>Works</p>
-          <p className="about-nav" onClick={() => ref4.current.scrollIntoView()}>About</p>
-          <p className="resume-nav" onClick={() => ref5.current.scrollIntoView()}>Resume</p>
+        <div class="navbarbg">
+
+        <a class="rexhub rexhubbg" onClick={() => ref1.current.scrollIntoView()}>RexHub</a>
+        <div className="navbg">
+          <a className="nav-itembg" onClick={() => ref2.current.scrollIntoView()}>Skills</a>
+          <a className="nav-itembg" onClick={() => ref3.current.scrollIntoView()}>Works</a>
+          <a className="nav-itembg" onClick={() => ref4.current.scrollIntoView()}>About</a>
+          <a className="nav-itembg nav-itembg-resume" onClick={() => ref5.current.scrollIntoView()}>Resume</a>
         </div>
+        </div>
+
+        <div class="navbarsm">
+        <BiMenu onClick={() => {style.rotate=='0'?setStyle({
+          move:'0',
+          rotate:'90deg'
+        }):setStyle({
+          move:'-100vw',
+          rotate:'0'
+        })}} style={{transform:`rotateZ(${style.rotate})`}} className='menu-icon' />
+        <div style={{transform: `translateX(${style.move})`,}} className="green"></div>
+        <ul style={{transform: `translateX(${style.move})`,}} className="nav-items">
+        <li>
+        <a class="rexhub nav-itemsm rexhubsm" onClick={() => ref1.current.scrollIntoView()}>RexHub</a>
+        </li>
+        <li>
+        <a className="nav-itemsm" onClick={() => ref2.current.scrollIntoView()}>Skills</a>
+        </li>
+        <li>
+          <a className="nav-itemsm" onClick={() => ref3.current.scrollIntoView()}>Works</a>
+        </li>
+        <li>
+        <a className="nav-itemsm" onClick={() => ref4.current.scrollIntoView()}>About</a>
+        </li>
+        <li>
+        <a className="nav-itemsm" onClick={() => ref5.current.scrollIntoView()}>Resume</a>
+        </li>
+        </ul>
         </div>
           <h1 className="title">Welcome To <span className="rex">RexHub</span>
           </h1>
@@ -47,25 +100,176 @@ function App() {
           <h1 className="skills-title">
             My Skills         
           </h1>
-          <h1  className="skill js">Javascript</h1>
-          <h1 className='skill react'>
-            React & Redux
-          </h1>
-          <h1 className='skill html'>
-            Html & Css
-          </h1>
-          <h1 className='skill boot'>
-            Bootstrap & Tailwind
-          </h1>
-          <h1 className='skill py'>
-            Python & Django
-          </h1>
-          <h1 className='skill sql'>
-            Database and MySql
-          </h1>
-          <h1 className='skill git'>
-            Git & Github
-          </h1>
+          <div className="skills">
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#F0DB4F'}} className="circle"
+              strokeDasharray="90, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Js} alt="" className='jsimg chart-img' />
+          </div>
+          <p className="skill-info">JavaScript</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#61DBFB'}} className="circle"
+              strokeDasharray="90, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Reactt} alt="" className='reactimg chart-img' />
+          </div>
+          <p className="skill-info">React</p>
+          </div>
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#764ABC'}} className="circle"
+              strokeDasharray="60, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Redux} alt="" className='chart-img reduximg' />
+          </div>
+          <p className="skill-info">Redux</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#F15931'}} className="circle"
+              strokeDasharray="91, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Html} alt="" className='chart-img htmlimg' />
+          </div>
+          <p className="skill-info">Html</p>
+          </div>
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#007DC6'}} className="circle"
+              strokeDasharray="93, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Css} alt="" className='cssimg chart-img' />
+          </div>
+          <p className="skill-info">Css</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#870AFB'}} className="circle"
+              strokeDasharray="50, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Bootstrap} alt="" className='chart-img bootimg' />
+          </div>
+          <p className="skill-info">Bootstrap</p>
+          </div>
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#01B7D6'}} className="circle"
+              strokeDasharray="40, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Tailwind} alt="" className='chart-img tailimg' />
+          </div>
+          <p className="skill-info">Tailwind</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#3574A4'}} className="circle"
+              strokeDasharray="90, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Python} alt="" className='chart-img pyimg' />
+          </div>
+          <p className="skill-info">Python</p>
+          </div>
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#27AB78'}} className="circle"
+              strokeDasharray="70, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Django} alt="" className='chart-img djimg' />
+          </div>
+          <p className="skill-info">Django</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#00758F'}} className="circle"
+              strokeDasharray="30, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Mysql} alt="" className='chart-img mysqlimg' />
+          </div>
+          <p className="skill-info">MySql</p>
+          </div>
+          <div data-aos="fade-right" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#F05033'}} className="circle"
+              strokeDasharray="50, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Git} alt="" className='chart-img gitimg' />
+          </div>
+          <p className="skill-info">Git</p>
+          </div>
+          <div data-aos="fade-left" className="skill">
+          <div className="chart">
+              <svg viewBox="0 0 36 36" className="circular-chart">
+              <path style={{stroke:'#000000'}} className="circle"
+              strokeDasharray="60, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <img src={Github} alt="" className='chart-img githubimg' />
+          </div>
+          <p className="skill-info">Github</p>
+          </div>
+        </div>
         </div>
         <div ref={ref3} className="works-body">
           <h1 class="works-title">My Recent Works</h1>
@@ -83,39 +287,19 @@ function App() {
          <h1 className="contact-title">
            Want To Have A Great Website?<br /><span className="call">Better Call Me ;)</span>
          </h1>
-         <div className="info">
-          <div className="icon-body">
-            <span>
-              <FaInstagram className='icon insta-icon' />
-            </span>
-            <h1 class="icon-info">
-               tearex0505
-            </h1>
-          </div>
-          <div className="icon-body">
-            <span>
-            <FaTelegram className='icon telegram-icon' />
-            </span>
-            <h1 class="icon-info">
-            tearex05
-            </h1>
-          </div>
-          <div className="icon-body">
-            <span>
-            <FaYahoo className='icon email-icon' />
-            </span>
-            <h1 class="icon-info">
-            tearex05
-            </h1>
-          </div>
-          <div className="icon-body">
-            <span>
-            <BsTwitter className='icon twitter-icon' />
-            </span>
-            <h1 class="icon-info">
-            tearex05
-            </h1>
-          </div>
+         <div className="medias">
+         <a href="https://www.instagram.com/tearex_05/" className="media-info">
+         <FaInstagram style={{fill: '#f95149'}} class='icon' />
+         </a>
+         <a href="https://t.me/tearex05" className="media-info">
+         <FaTelegram style={{fill: '#2FA3D9'}} class='icon' />
+         </a>
+         <a href="mailto: tearex05@yahoo.com" className="media-info">
+         <FaYahoo style={{fill: '#5C01CA'}} class='icon' />
+         </a>
+         <a href="https://twitter.com/tearex05" className="media-info">
+         <BsTwitter style={{fill: '#1C93E4'}} class='icon' />
+         </a>
          </div>
         </div>
         <div ref={ref5} className="resume">
@@ -128,11 +312,6 @@ function App() {
         </div>
       </div>
     </div>
-    <div class="scroll-downs">
-  <div class="mousey">
-    <div class="scroller"></div>
-  </div>
-</div>
     </>
   )
 }
