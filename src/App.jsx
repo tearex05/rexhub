@@ -274,9 +274,9 @@ const [style, setStyle] = useState({
         <div ref={ref3} className="works-body">
           <h1 class="works-title">My Recent Works</h1>
           <div className="works">
-            <Work img={Benz} link='https://tearex05.github.io/mbenz/' />
+            <Work img={Benz} link='https://tearex05.github.io/mercedesbenz/' />
             <Work img={Ham} link='https://tearex05.github.io/burger/' />
-            <Work img={Teagame} link='https://tearex05.github.io/sgame/' />
+            <Work img={Teagame} link='https://tearex05.github.io/squidgame/' />
             <Work img={Tour} link='https://tearex05.github.io/tour-agency/' />
           </div>
           <h1 className="coming">
