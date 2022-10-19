@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rexhub/static/css/main.0c1f3c46.css",
-    "main.js": "/rexhub/static/js/main.99b68bbe.js",
+    "main.js": "/rexhub/static/js/main.ab05a7b2.js",
     "static/media/rexbg.png": "/rexhub/static/media/rexbg.f74a893fae253a340578.png",
     "static/media/resume.jpg": "/rexhub/static/media/resume.559ef980a8ab897bb523.jpg",
     "static/media/bootstrap.png": "/rexhub/static/media/bootstrap.7c69b905ff680bf51219.png",
-    "static/media/work3.jpg": "/rexhub/static/media/work3.2362008a2754169494bf.jpg",
     "static/media/react.png": "/rexhub/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/python.png": "/rexhub/static/media/python.7fc4f0e4976a4bbdcba6.png",
-    "static/media/work2.jpg": "/rexhub/static/media/work2.0e5c604e30486ac8b90f.jpg",
+    "static/media/work2.jpg": "/rexhub/static/media/work2.9bb5266cc013d942cdbd.jpg",
     "static/media/tailwind.png": "/rexhub/static/media/tailwind.36b2728bf0d14b7b7576.png",
     "static/media/work1.jpg": "/rexhub/static/media/work1.33e112bb3716e1f6a08b.jpg",
+    "static/media/work3.jpg": "/rexhub/static/media/work3.41b047ec18b8279bac73.jpg",
     "static/media/work4.jpg": "/rexhub/static/media/work4.bca19d2e7e7ff94b3364.jpg",
     "static/media/django.png": "/rexhub/static/media/django.a5aaa412df3c52f5f6bf.png",
     "static/media/js.png": "/rexhub/static/media/js.7f8751632b42a9932c15.png",
@@ -20,10 +20,10 @@
     "static/media/html.png": "/rexhub/static/media/html.f1154e3fc8c46cd0b3ce.png",
     "index.html": "/rexhub/index.html",
     "main.0c1f3c46.css.map": "/rexhub/static/css/main.0c1f3c46.css.map",
-    "main.99b68bbe.js.map": "/rexhub/static/js/main.99b68bbe.js.map"
+    "main.ab05a7b2.js.map": "/rexhub/static/js/main.ab05a7b2.js.map"
   },
   "entrypoints": [
     "static/css/main.0c1f3c46.css",
-    "static/js/main.99b68bbe.js"
+    "static/js/main.ab05a7b2.js"
   ]
 }
