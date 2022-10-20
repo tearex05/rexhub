@@ -258,7 +258,7 @@ const [style, setStyle] = useState({
           <div data-aos="fade-left" className="skill">
           <div className="chart">
               <svg viewBox="0 0 36 36" className="circular-chart">
-              <path style={{stroke:'#000000'}} className="circle"
+              <path style={{stroke:'white'}} className="circle"
               strokeDasharray="60, 100"
               d="M18 2.0845
               a 15.9155 15.9155 0 0 1 0 31.831
