@@ -7,8 +7,8 @@ import Benz from './assets/work1.jpg'
 import Ham from './assets/work2.jpg'
 import Teagame from './assets/work3.jpg'
 import Tour from './assets/work4.jpg'
-import {FaInstagram, FaTelegram, FaYahoo} from 'react-icons/fa'
-import {BsTwitter} from 'react-icons/bs'
+import {FaTelegram, FaYahoo} from 'react-icons/fa'
+import {BsTwitter, BsLinkedin} from 'react-icons/bs'
 import Resume from './assets/resume.jpg'
 import {BiMenu} from 'react-icons/bi'
 import Js from './assets/icons/js.png'
@@ -288,8 +288,8 @@ const [style, setStyle] = useState({
            Want To Have A Great Website?<br /><span className="call">Better Call Me ;)</span>
          </h1>
          <div className="medias">
-         <a href="https://www.instagram.com/tearex_05/" className="media-info">
-         <FaInstagram style={{fill: '#f95149'}} class='icon' />
+         <a href="https://www.linkedin.com/in/tea-rex-2860ab254/" className="media-info">
+         <BsLinkedin style={{fill: '#0A66C2'}} class='icon' />
          </a>
          <a href="https://t.me/tearex05" className="media-info">
          <FaTelegram style={{fill: '#2FA3D9'}} class='icon' />
