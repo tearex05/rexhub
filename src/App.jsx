@@ -291,9 +291,6 @@ const [style, setStyle] = useState({
          <a href="https://www.linkedin.com/in/tea-rex-2860ab254/" className="media-info">
          <BsLinkedin style={{fill: '#0A66C2'}} class='icon' />
          </a>
-         <a href="https://t.me/tearex05" className="media-info">
-         <FaTelegram style={{fill: '#2FA3D9'}} class='icon' />
-         </a>
          <a href="mailto: tearex05@yahoo.com" className="media-info">
          <FaYahoo style={{fill: '#5C01CA'}} class='icon' />
          </a>

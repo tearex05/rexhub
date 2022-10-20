@@ -986,3 +986,19 @@ margin-bottom: 100px;
     stroke-dasharray: 0 100;
   }
 }
+
+.medias{
+  display: grid;
+}
+
+@media (max-width: 480px){
+  .medias{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 481px){
+  .medias{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
