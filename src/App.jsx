@@ -288,7 +288,7 @@ const [style, setStyle] = useState({
            Want To Have A Great Website?<br /><span className="call">Better Call Me ;)</span>
          </h1>
          <div className="medias">
-         <a href="https://www.linkedin.com/in/tea-rex-2860ab254/" className="media-info">
+         <a href="https://www.linkedin.com/in/tea-rex-ab6688254/" className="media-info">
          <BsLinkedin style={{fill: '#0A66C2'}} class='icon' />
          </a>
          <a href="mailto: tearex05@yahoo.com" className="media-info">
