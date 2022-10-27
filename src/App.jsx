@@ -7,6 +7,7 @@ import Benz from './assets/work1.jpg'
 import Ham from './assets/work2.jpg'
 import Teagame from './assets/work4.jpg'
 import Tour from './assets/work3.jpg'
+import Calculator from './assets/work5.jpg'
 import {FaTelegram, FaYahoo, FaInstagram} from 'react-icons/fa'
 import {BsLinkedin} from 'react-icons/bs'
 import Resume from './assets/resume.jpg'
@@ -278,6 +279,7 @@ const [style, setStyle] = useState({
             <Work img={Ham} link='https://tearex05.github.io/burger/' />
             <Work img={Teagame} link='https://tearex05.github.io/squidgame/' />
             <Work img={Tour} link='https://tearex05.github.io/tour-agency/' />
+            <Work img={Calculator} link='https://tearex05.github.io/calculator/' />
           </div>
           <h1 className="coming">
             More Coming Soon...
