@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rexhub/static/css/main.17078d59.css",
+    "main.css": "/rexhub/static/css/main.25f5e87b.css",
     "main.js": "/rexhub/static/js/main.4b423b68.js",
     "static/media/rexbg.png": "/rexhub/static/media/rexbg.f74a893fae253a340578.png",
     "static/media/resume.jpg": "/rexhub/static/media/resume.559ef980a8ab897bb523.jpg",
@@ -20,11 +20,11 @@
     "static/media/css.png": "/rexhub/static/media/css.bff8d1b7798aa0828562.png",
     "static/media/html.png": "/rexhub/static/media/html.f1154e3fc8c46cd0b3ce.png",
     "index.html": "/rexhub/index.html",
-    "main.17078d59.css.map": "/rexhub/static/css/main.17078d59.css.map",
+    "main.25f5e87b.css.map": "/rexhub/static/css/main.25f5e87b.css.map",
     "main.4b423b68.js.map": "/rexhub/static/js/main.4b423b68.js.map"
   },
   "entrypoints": [
-    "static/css/main.17078d59.css",
+    "static/css/main.25f5e87b.css",
     "static/js/main.4b423b68.js"
   ]
 }
