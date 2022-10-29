@@ -299,9 +299,6 @@ const [style, setStyle] = useState({
          <a href="https://t.me/tearex05" className="media-info">
          <FaTelegram style={{fill: '#1C93E4'}} class='icon' />
          </a>
-         <a href="https://www.instagram.com/tearex_05/" className="media-info">
-         <FaInstagram style={{fill: 'tomato'}} class='icon' />
-         </a>
          </div>
         </div>
         <div ref={ref5} className="resume">
