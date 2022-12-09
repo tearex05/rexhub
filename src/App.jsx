@@ -9,7 +9,7 @@ import Teagame from './assets/work4.jpg'
 import Tour from './assets/work3.jpg'
 import Calculator from './assets/work5.jpg'
 import {FaTelegram, FaYahoo, FaInstagram} from 'react-icons/fa'
-import {BsLinkedin} from 'react-icons/bs'
+import {SiGmail} from 'react-icons/si'
 import Resume from './assets/resume.jpg'
 import {BiMenu} from 'react-icons/bi'
 import Js from './assets/icons/js.png'
@@ -60,7 +60,6 @@ const [style, setStyle] = useState({
           <a className="nav-itembg" onClick={() => ref2.current.scrollIntoView()}>Skills</a>
           <a className="nav-itembg" onClick={() => ref3.current.scrollIntoView()}>Works</a>
           <a className="nav-itembg" onClick={() => ref4.current.scrollIntoView()}>About</a>
-          <a className="nav-itembg nav-itembg-resume" onClick={() => ref5.current.scrollIntoView()}>Resume</a>
         </div>
         </div>
 
@@ -85,9 +84,6 @@ const [style, setStyle] = useState({
         </li>
         <li>
         <a className="nav-itemsm" onClick={() => ref4.current.scrollIntoView()}>About</a>
-        </li>
-        <li>
-        <a className="nav-itemsm" onClick={() => ref5.current.scrollIntoView()}>Resume</a>
         </li>
         </ul>
         </div>
@@ -290,8 +286,8 @@ const [style, setStyle] = useState({
            Want To Have A Great Website?<br /><span className="call">Better Call Me ;)</span>
          </h1>
          <div className="medias">
-         <a href="https://www.linkedin.com/in/tea-rex-ab6688254/" className="media-info">
-         <BsLinkedin style={{fill: '#0A66C2'}} class='icon' />
+         <a href="mailto: tearex0505@gmail.com" className="media-info">
+         <SiGmail style={{fill: '#F04536'}} class='icon' />
          </a>
          <a href="mailto: tearex05@yahoo.com" className="media-info">
          <FaYahoo style={{fill: '#5C01CA'}} class='icon' />
@@ -301,11 +297,6 @@ const [style, setStyle] = useState({
          </a>
          </div>
         </div>
-        <div ref={ref5} className="resume">
-           <h1 class="resume-title">Wanna See My Resume?<br/><span className="all">Its All Here!</span></h1>
-           <img src={Resume} alt="My Pretty Resume" class="resume-img" />
-           <a href="https://drive.google.com/uc?id=11bHvLCbSVhbIWT-_QxcH9VSKML4KuecE&export=download" className="explore download">Download</a>
-        </div>  
         <div className="end">
            <h1 className="end-title">To Be Continued...</h1>
         </div>
